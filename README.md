@@ -3,8 +3,7 @@
 
 ## 1. File Directory 
 ```
-📂 B3A1
-│
+B3A1
 ├── 설명자료.txt
 ├── NanumBarunGothic.ttf   		   
 │
