@@ -12,14 +12,16 @@
 
 ## 1. File Directory    
 
-**내부 데이터**는 [COMPAS](https://compas.lh.or.kr/subj/past/data?subjNo=SBJ_2102_002) 및 [변수 설명 목록](https://www.notion.so/571023600c7940bd8652cd5a047fbb8f) 에서 확인할 수 있으며, **외부 데이터**는 다음 사항을 참고해 주시기 바랍니다. 
+**내부 데이터**는 [COMPAS](https://compas.lh.or.kr/subj/past/data?subjNo=SBJ_2102_002) 및 [변수 설명 목록](https://www.notion.so/571023600c7940bd8652cd5a047fbb8f)에서 확인할 수 있으며, **외부 데이터**는 다음 사항을 참고해 주시기 바랍니다. 
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43749571/115104206-dc4c6300-9f91-11eb-9fbb-8774b84d305a.jpg"></p>
 
 ```shell
 B3A1
-├── 설명자료.txt
-├── NanumBarunGothic.ttf   		   
+├── 📂 input  
+│   ├── 1.수원시_버스정류장.csv 
+│   ├── ...
+│   └── 32.수원시_지적도.geojson  		   
 │
 ├── 📂 data     
 │   ├── GGD_RouteInfo_M.xls  		 # 경기도 버스 노선 순서 
@@ -43,10 +45,10 @@ B3A1
 │   ├── bus_filter_final.qgz		 # 수원시 BIS&인도폭 버스정류장 필터링
 │   └── link_filter_final.qgz 		 # 수원시 교통링크 필터링 
 │
-├── 1_DataPreprocessing.html     	 # 1_DataPreprocessing.ipynb 실행 결과 파일 
-├── 2_SparsePCA_Clustering.html    	 # 2_SparsePCA_Clustering.ipynb 실행 결과 파일 
-├── 3_PLS_Regression.html    		 # 3_PLS_Regression.ipynb 실행 결과 파일 
-└── 4_Optimize_Targeting.html    	 # 4_Optimize_Targeting.ipynb 실행 결과 파일 
+├── 1_DataPreprocessing.ipynb
+├── 2_SparsePCA_Clustering.ipynb  
+├── 3_PLS_Regression.ipynb 
+└── 4_Optimize_Targeting.ipynb 
 ```
 
 
@@ -60,10 +62,10 @@ data, busdata 폴더 하에 데이터를 다운로드 받아주시고, 가장 �
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43749571/115104215-e40c0780-9f91-11eb-85e7-cbd9772af02a.jpg"></p>
 
-1. **[Data Preprocessing](https://github.com/jbeen2/BUS/blob/main/1_DataPreprocessing.ipynb)** : 분석에 사용할 데이터를 전처리 하는 과정입니다.  <br>
-2. **[Sparse PCA & Clustering](https://github.com/jbeen2/BUS/blob/main/2_SparsePCA_Clustering.ipynb)** : SPCA를 통해 데이터를 차원축소하고, Clustering을 통해 구별 target 후보지를 선정합니다. <br>
-3. **[PLS Regression](https://github.com/jbeen2/BUS/blob/main/3_PLS_Regression.ipynb)** : 변수간의 상관관계를 고려한 PLS Regression 을 적합해, 스마트 지수를 생성합니다. <br>
-4. **[Optimize & Targeting](https://github.com/jbeen2/BUS/blob/main/4_Optimize_Targeting.ipynb)** : constraint를 부여하여 최적 스마트 버스정류장 설치위치를 찾고, 광고 타겟층을 선정합니다.  
+1. **[Data Preprocessing](https://github.com/jbeen2/LH-BUS/blob/main/1_DataPreprocessing.ipynb)** : 분석에 사용할 데이터를 전처리 하는 과정입니다.  <br>
+2. **[Sparse PCA & Clustering](https://github.com/jbeen2/LH-BUS/blob/main/2_SparsePCA_Clustering.ipynb)** : SPCA를 통해 데이터를 차원축소하고, Clustering을 통해 구별 target 후보지를 선정합니다. <br>
+3. **[PLS Regression](https://github.com/jbeen2/LH-BUS/blob/main/3_PLS_Regression.ipynb)** : 변수간의 상관관계를 고려한 PLS Regression 을 적합해, 스마트 지수를 생성합니다. <br>
+4. **[Optimize & Targeting](https://github.com/jbeen2/LH-BUS/blob/main/4_Optimize_Targeting.ipynb)** : constraint를 부여하여 최적 스마트 버스정류장 설치위치를 찾고, 광고 타겟층을 선정합니다.  
 
 <br>
 
